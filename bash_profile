@@ -15,7 +15,7 @@ export PATH=~/bin:$(brew --prefix josegonzalez/php/php55)/bin:/usr/local/etc/php
 
 # Open specified files in Sublime Text
 # "s ." will open the current directory in Sublime
-alias s='open -a "Sublime Text"'
+alias s='open -a "Sublime Text 2"'
 
 # Color LS
 colorflag="-G"
@@ -31,7 +31,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # Shortcuts to Optus folder
-alias optus="cd ~/Documents/Optus/dev"
+alias optus="cd ~/Documents/Development/Optus"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
@@ -118,4 +118,4 @@ export PS2="\[$ORANGE\]→ \[$RESET\]"
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 
 # init z! (https://github.com/rupa/z)
-. ~/z.sh
+. ~/dotfiles/z.sh

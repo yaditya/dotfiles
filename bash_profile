@@ -4,8 +4,11 @@
 #export WEBDEV_ENV_DIR=/Users/work/Documents/Optus/dev/OnePortal-Tools
 
 # OnePortal Alias
+alias 1p="cd ~/Documents/Development/Optus/OnePortal-FrontEnd"
 alias tomcat=${WEBDEV_ENV_DIR}/local_env/tomcat/bin/startup.sh
 
+# UPC FrontEnd Alias
+alias upc="cd ~/Documents/Development/Optus/UPC-FrontEnd"
 
 # MySQL
 export PATH=~/bin:$(brew --prefix josegonzalez/php/php55)/bin:/usr/local/etc/php/5.5:/usr/local/bin:/usr/local/mysql/bin:$PATH
@@ -15,7 +18,7 @@ export PATH=~/bin:$(brew --prefix josegonzalez/php/php55)/bin:/usr/local/etc/php
 
 # Open specified files in Sublime Text
 # "s ." will open the current directory in Sublime
-alias s='open -a "Sublime Text 2"'
+alias s='open -a "Sublime Text"'
 
 # Color LS
 colorflag="-G"
@@ -119,3 +122,5 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 
 # init z! (https://github.com/rupa/z)
 . ~/dotfiles/z.sh
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

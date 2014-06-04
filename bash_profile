@@ -49,7 +49,11 @@ alias gs='git status'
 alias ga='git add .'
 alias gc='git commit -m' # requires you to type a commit message
 alias gp='git push'
-
+alias gf='git fetch && git fetch --tags'
+alias gt='git tag -l'
+alias gtl='git for-each-ref --format="%(taggerdate): %(refname)" --sort=-taggerdate --count=10 refs/tags'
+alias gr='grunt --config gruntfile.js'
+alias gb='grunt build'
 
 ### Prompt Colors
 # Modified version of @gf3’s Sexy Bash Prompt

@@ -14,8 +14,9 @@ alias upc="cd ~/Documents/Development/Optus/UPC-FrontEnd"
 export PATH=~/bin:$(brew --prefix josegonzalez/php/php55)/bin:/usr/local/etc/php/5.5:/usr/local/bin:/usr/local/mysql/bin:$PATH
 
 # Sonar
-export PATH=$PATH:/Users/work/Documents/sonarqube-4.3/bin:
-export SONAR_QUBE_HOME=/Users/work/Documents/sonarqube-4.3
+export PATH=~/Documents/sonarqube-4.3/bin:~/Documents/sonar-runner-2.4/bin:$PATH
+export SONAR_QUBE_HOME=~/Documents/sonarqube-4.3
+export SONAR_RUNNER_HOME=~/Documents/sonar-runner-2.4
 
 ### Aliases
 

@@ -1,72 +1,72 @@
 [user]
-        name = Yovi Budirahardjo
-        email = ybudirahardjo@bauer-media.com.au
+    name = Yovi Budirahardjo
+    email = ybudirahardjo@bauer-media.com.au
 [push]
-        default = current
+	default = current
 [merge]
-        branchdesc = true
-        log = true
-        ff = false
+    branchdesc = true
+    log = true
+    ff = false
 [alias]
-        show-root-folder = rev-parse --show-toplevel
-        forward = pull --ff -r
-        st = status
-        co = checkout
-        br = branch -v
-        ec = config --global -e
-        up = !git pull --rebase --prune $@ && git submodule update --init --recursive
-        cob = checkout -b
-        ci = commit -m
-        cam = !git add -A && git commit -m
-        undo = reset HEAD~1 --mixed
-        amend = commit -a --amend
-        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-        last = log -1 HEAD
-        la = "!git config -l | grep alias | cut -c 7-"
-        hm = !git --no-pager log origin/master..HEAD --abbrev-commit --pretty=oneline
-        hd = !git --no-pager log origin/develop..HEAD --abbrev-commit --pretty=oneline
-        r = reset
-        r1 = reset HEAD^
-        r2 = reset HEAD^^
-        rh = reset --hard
-        rh1 = reset HEAD^ --hard
-        rh2 = reset HEAD^^ --hard
+    show-root-folder = rev-parse --show-toplevel
+    forward = pull --ff -r
+    st = status
+    co = checkout
+    br = branch -v
+    ec = config --global -e
+    up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+    cob = checkout -b
+    ci = commit -m
+    cam = !git add -A && git commit -m
+    undo = reset HEAD~1 --mixed
+    amend = commit -a --amend
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    last = log -1 HEAD
+    la = "!git config -l | grep alias | cut -c 7-"
+    hm = !git --no-pager log origin/master..HEAD --abbrev-commit --pretty=oneline
+    hd = !git --no-pager log origin/develop..HEAD --abbrev-commit --pretty=oneline
+    r = reset
+    r1 = reset HEAD^
+    r2 = reset HEAD^^
+    rh = reset --hard
+    rh1 = reset HEAD^ --hard
+    rh2 = reset HEAD^^ --hard
 [core]
-        # Use custom `.gitignore`
-        excludesfile = /Users/optus/.gitignore
-        # Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
-        whitespace = space-before-tab,indent-with-non-tab,trailing-space
-        autocrlf = input
-        ignorecase = false
+    # Use custom `.gitignore`
+    excludesfile = /Users/optus/.gitignore
+    # Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
+    whitespace = space-before-tab,indent-with-non-tab,trailing-space
+    autocrlf = input
+    ignorecase = false
 [color]
-        # Use colors in Git commands that are capable of colored output when outputting to the terminal
-        ui = auto
+    # Use colors in Git commands that are capable of colored output when outputting to the terminal
+    ui = auto
 [color "branch"]
-        current = yellow reverse
-        local = yellow
-        remote = green
+    current = yellow reverse
+    local = yellow
+    remote = green
 [color "diff"]
-        meta = yellow bold
-        frag = magenta bold
-        old = red bold
-        new = green bold
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
 [color "status"]
-        added = yellow
-        changed = green
-        untracked = cyan
+	added = yellow
+	changed = green
+	untracked = cyan
 [filter "media"]
-        clean = git-media-clean %f
-        smudge = git-media-smudge %f
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
 [diff]
-        tool = wstorm
+  	tool = wstorm
 [difftool]
-        prompt = false
+  	prompt = false
 [difftool "wstorm"]
-        cmd = /usr/local/bin/wstorm diff "$LOCAL" "$REMOTE"
+  	cmd = /usr/local/bin/wstorm diff "$LOCAL" "$REMOTE"
 [merge]
-        tool = wstorm
+  	tool = wstorm
 [mergetool "wstorm"]
-        cmd = /usr/local/bin/wstorm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+  	cmd = /usr/local/bin/wstorm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
 [mergetool]
-        prompt = false
-        keepBackup = false
+  	prompt = false
+	keepBackup = false

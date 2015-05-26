@@ -1,3 +1,5 @@
+source ~/.profile
+
 # OnePortal
 #export JAVA_HOME=$(/usr/libexec/java_home)
 #export WEBDEV_FRONTEND_DIR=/Users/work/Documents/Optus/dev/OnePortal-FrontEnd
@@ -17,6 +19,9 @@ export PATH=~/bin:$(brew --prefix josegonzalez/php/php55)/bin:/usr/local/etc/php
 #export PATH=~/Documents/sonarqube-4.3/bin:~/Documents/sonar-runner-2.4/bin:$PATH
 #export SONAR_QUBE_HOME=~/Documents/sonarqube-4.3
 #export SONAR_RUNNER_HOME=~/Documents/sonar-runner-2.4
+
+# Python
+export PYTHONPATH="/usr/bin/python":$PYTHONPATH
 
 ### Aliases
 
@@ -139,3 +144,4 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 . ~/dotfiles/z.sh
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+

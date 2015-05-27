@@ -1,6 +1,6 @@
 [user]
     name = Yovi Budirahardjo
-    email = ybudirahardjo@bauer-media.com.au
+	email = yovi@yovib.com.au
 [push]
 	default = current
 [merge]
@@ -58,15 +58,16 @@
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 [diff]
-  	tool = wstorm
+  	tool = kdiff3
 [difftool]
   	prompt = false
-[difftool "wstorm"]
-  	cmd = /usr/local/bin/wstorm diff "$LOCAL" "$REMOTE"
+[difftool "kdiff3"]
+  	cmd = /usr/local/bin/kdiff3 diff "$LOCAL" "$REMOTE"
 [merge]
-  	tool = wstorm
-[mergetool "wstorm"]
-  	cmd = /usr/local/bin/wstorm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+	tool = kdiff3
 [mergetool]
   	prompt = false
 	keepBackup = false
+[mergetool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+    trustExitCode = false

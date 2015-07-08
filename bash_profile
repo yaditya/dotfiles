@@ -43,9 +43,8 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # Shortcuts
-alias wn="cd ~/Documents/Development/Bauer/womens-network"
-alias food="cd ~/Documents/Development/Bauer/womens-network/Bauer.Food.Web"
-alias cukefood="cd ~/Documents/Development/Bauer/womens-network/automation/food-book"
+alias food="cd ~/Documents/Development/Bauer/food-site"
+alias cukefood="cd ~/Documents/Development/Bauer/food-site/automation/food-book"
 alias mm="cd ~/Documents/Development/Bauer/money-site"
 
 # Enable aliases to be sudo’ed

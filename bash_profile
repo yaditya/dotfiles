@@ -22,6 +22,7 @@ export PATH=~/bin:$(brew --prefix josegonzalez/php/php55)/bin:/usr/local/etc/php
 
 # Python
 export PYTHONPATH="/usr/bin/python":$PYTHONPATH
+export PATH=${PATH}:/Library/Python/2.7/site-packages
 
 ### Aliases
 

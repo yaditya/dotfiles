@@ -1,34 +1,13 @@
 source ~/.profile
 
-# OnePortal
-#export JAVA_HOME=$(/usr/libexec/java_home)
-#export WEBDEV_FRONTEND_DIR=/Users/work/Documents/Optus/dev/OnePortal-FrontEnd
-#export WEBDEV_ENV_DIR=/Users/work/Documents/Optus/dev/OnePortal-Tools
-
-# OnePortal Alias
-#alias 1p="cd ~/Documents/Development/Optus/OnePortal-FrontEnd"
-#alias tomcat=${WEBDEV_ENV_DIR}/local_env/tomcat/bin/startup.sh
-
-# UPC FrontEnd Alias
-#alias upc="cd ~/Documents/Development/Optus/UPC-FrontEnd"
-
 # MySQL
 export PATH=~/bin:$(brew --prefix josegonzalez/php/php55)/bin:/usr/local/etc/php/5.5:/usr/local/bin:/usr/local/mysql/bin:$PATH
-
-# Sonar
-#export PATH=~/Documents/sonarqube-4.3/bin:~/Documents/sonar-runner-2.4/bin:$PATH
-#export SONAR_QUBE_HOME=~/Documents/sonarqube-4.3
-#export SONAR_RUNNER_HOME=~/Documents/sonar-runner-2.4
 
 # Python
 export PYTHONPATH="/usr/bin/python":$PYTHONPATH
 export PATH=${PATH}:/Library/Python/2.7/site-packages
 
 ### Aliases
-
-# Open specified files in Sublime Text
-# "s ." will open the current directory in Sublime
-alias s='open -a "Sublime Text"'
 
 # Color LS
 colorflag="-G"
@@ -43,11 +22,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# Shortcuts
-alias food="cd ~/Documents/Development/Bauer/food-site"
-alias cukefood="cd ~/Documents/Development/Bauer/food-site/automation/food-book"
-alias mm="cd ~/Documents/Development/Bauer/money-site"
-
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
@@ -59,14 +33,12 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 # You must install Git first - ""
 alias gs='git status'
 alias ga='git add .'
-alias gc='git commit -m' # requires you to type a commit message
+alias gci='git commit -m' # requires you to type a commit message
 alias gco='git checkout'
 alias gp='git push'
 alias gf='git fetch && git fetch --tags'
 alias gt='git tag -l'
 alias gtl='git for-each-ref --format="%(taggerdate): %(refname)" --sort=-taggerdate --count=10 refs/tags'
-alias gulpt='gulp test'
-alias gulpmac='gulp --mac'
 alias gm='git merge --no-ff'
 alias gr='git pull --rebase'
 alias gri='git pull --rebase -i'
